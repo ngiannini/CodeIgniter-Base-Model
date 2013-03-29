@@ -229,11 +229,19 @@ class MY_Model extends CI_Model
     /**
      * Deletes all records in the table
      * 
+     * @param bool $soft whether or not to permenantly delete records
      * @return bool status of the deletion
      */
-    public function delete_all()
+    public function delete_all($soft = null)
     {
-        return $this->db->empty_table($this->_table);
+        $soft || $soft = $this->_soft_delete;
+        if ($soft === true) {
+            $now = date($this->_time_format);
+            $data[$this->_deleted_field] = $now;
+            return $this->update_many(array($this->_deleted_field.' !=', null), $data);
+        } else {
+            return $this->db->empty_table($this->_table);
+        }
     }
 
     /**
