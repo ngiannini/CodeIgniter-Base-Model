@@ -1,12 +1,12 @@
-# Complete documentation coming soon...# CodeIgniter Base Model
+# CodeIgniter Base Model
 
 A simple base model that provides CRUD and common functions for faster development
 
 * [Installation](https://github.com/ngiannini/CodeIgniter-Base-Model#installation)
 * [CRUD](https://github.com/ngiannini/CodeIgniter-Base-Model#crud)
 * [Utility Functions](https://github.com/ngiannini/CodeIgniter-Base-Model#utility-functions)
-* [Return Types]https://github.com/ngiannini/CodeIgniter-Base-Model#return-types
-* [Soft Delete]https://github.com/ngiannini/CodeIgniter-Base-Model#soft-delete
+* [Return Types](https://github.com/ngiannini/CodeIgniter-Base-Model#return-types)
+* [Soft Delete](https://github.com/ngiannini/CodeIgniter-Base-Model#soft-delete)
 
 ## Installation
 
